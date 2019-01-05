@@ -1,0 +1,12 @@
+<table>
+  <% data.forEach(function(product){%>
+	<tr>
+	<td><%= product.name%></td>
+	<td><%= product.rate%></td>
+	<td><a href="edit/menu_items/<%=product.id %>"><i class="fa fa-edit"></i>Edit</a></td>
+	<td><a href="delete/menu_items/<%=product.id %>"><i class="fa fa-edit"></i>Deletes</a></td>
+
+
+	</tr>
+	<%})%>
+</table>
